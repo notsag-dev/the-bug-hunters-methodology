@@ -21,4 +21,8 @@
     - Spiders to use: [hakrawler](https://github.com/hakluke/hakrawler) and [gospider](https://github.com/jaeles-project/gospider)
     - Similar tool: [subdomainizer](https://github.com/nsonaniya2010/SubDomainizer), get subdomains from javascript, also cloud info, potentially leaked keys.
     - Just for subdomains use [subscraper](https://github.com/Cillian-Collins/subscraper). It supports recursion.
+  - Subdomain scraping:
+    - Using Google:
+      - First search for `site:twitch.tv`. Then `site:twitch.tv -www.twitch.tv`. Then `site:twitch.tv -www.twitch.tv -dev.twitch.tv`, iteratively adding the ones you've found
+      - 
     
