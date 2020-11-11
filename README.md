@@ -16,5 +16,9 @@
 - Search the domain on Shodan
 - Find subdomains:
   - Linked discovery:
-    - Check all links on the page to get new domains/subdomains. Spider. Burp suite pro. I believe this can be done using Zap
+    - Check all links on the page to get new domains/subdomains
     - When new domains/subdomains are found, also add them to the spider list and repeat
+    - Spiders to use: [hakrawler](https://github.com/hakluke/hakrawler) and [gospider](https://github.com/jaeles-project/gospider)
+    - Similar tool: [subdomainizer](https://github.com/nsonaniya2010/SubDomainizer), get subdomains from javascript, also cloud info, potentially leaked keys.
+    - Just for subdomains use [subscraper](https://github.com/Cillian-Collins/subscraper). It supports recursion.
+    
