@@ -15,6 +15,7 @@
 - Use Google to search for the copyright sentence: `"Twitch Interactive, Inc" inurl:twitch`
 - Search the domain on Shodan
 - Find subdomains:
+  - Find subdomains -> feed them back to the beginning of the workflow. Iterative process.
   - Linked discovery:
     - Check all links on the page to get new domains/subdomains
     - When new domains/subdomains are found, also add them to the spider list and repeat
@@ -24,5 +25,11 @@
   - Subdomain scraping:
     - Using Google:
       - First search for `site:twitch.tv`. Then `site:twitch.tv -www.twitch.tv`. Then `site:twitch.tv -www.twitch.tv -dev.twitch.tv`, iteratively adding the ones you've found
-      - 
+    - Using amass, subfinder, [github-subdomains](https://github.com/gwen001/github-subdomains), :
+      - `amass -d twitch.tv`
+      - `subfinder -d twitch.tv -v`
+      - [github-subdomains](https://github.com/gwen001/github-subdomains): `github-subdomains -d twitch.tv` (rate limited, 5 iterations with a sleep of 6 seconds, and then wait 10 seconds)
+      - [shosubgo](https://github.com/incogbyte/shosubgo): `shosubgo`: `go run main.go -d twitch.tv -s`
+      - Scan cloud ranges and check if certificates match your target (masscan, nmap) Some bash scripting required
+    
     
