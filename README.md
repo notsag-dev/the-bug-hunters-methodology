@@ -47,5 +47,7 @@
     - Use `brutespray` to bruteforce credentials taking as an input the -oG output of masscan
   - Github dorking: https://gist.github.com/jhaddix/77253cea49bf4bd4bfd5d384a37ce7a4
   - Screenshot taking: aquatone, HTTPScreenshot, Eyewitness
+  - Subdomain takeover: if a subdomain is pointing to another service's tool, like heroku or a aws s3 bucket, and they don't exist anymore, it would be possible to register them for the users to think it's the actual site while it's not. https://github.com/edoverflow/can-i-take-over-xyz
+  
     
     
