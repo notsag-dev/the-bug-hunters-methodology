@@ -37,5 +37,15 @@
     - Also amass uses 8 dns servers by default and also allows to set extra ones using the -rf flag
       - `amass enum -brute -d twitch.tv -src` (-src gets from where the subdomains are coming from)
       - `amass enum -brute -d twitch.tv -rf resolvers.txt -w bruteforce.list`
+    - [shuffledns](https://github.com/projectdiscovery/shuffledns) is based on massdns and has similar usage
+    - Check all.txt from jhaddix
+  - Port scanning
+    - Do port scanning using masscan (just works with IPs, not domains) to detect open ports as it's really fast. Then, feed those ports into nmap to scan those open ports
+      - `masscan -p1-65535 -iL $ipfile --maxrate 1800 -oG output.txt`
+      - `dnmasscan` has a similar use but it accepts domain names as targets
+  - Service scanning
+    - Use `brutespray` to bruteforce credentials taking as an input the -oG output of masscan
+  - Github dorking: https://gist.github.com/jhaddix/77253cea49bf4bd4bfd5d384a37ce7a4
+  - Screenshot taking: aquatone, HTTPScreenshot, Eyewitness
     
     
