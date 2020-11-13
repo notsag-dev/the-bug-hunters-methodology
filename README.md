@@ -31,5 +31,11 @@
       - [github-subdomains](https://github.com/gwen001/github-subdomains): `github-subdomains -d twitch.tv` (rate limited, 5 iterations with a sleep of 6 seconds, and then wait 10 seconds)
       - [shosubgo](https://github.com/incogbyte/shosubgo): `shosubgo`: `go run main.go -d twitch.tv -s`
       - Scan cloud ranges and check if certificates match your target (masscan, nmap) Some bash scripting required
+  - Subdomain bruting
+    - It's important to use multiple DNS servers simultaneously
+    - [massdns](https://github.com/blechschmidt/massdns)
+    - Also amass uses 8 dns servers by default and also allows to set extra ones using the -rf flag
+      - `amass enum -brute -d twitch.tv -src` (-src gets from where the subdomains are coming from)
+      - `amass enum -brute -d twitch.tv -rf resolvers.txt -w bruteforce.list`
     
     
