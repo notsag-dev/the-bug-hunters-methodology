@@ -39,15 +39,18 @@
       - `amass enum -brute -d twitch.tv -rf resolvers.txt -w bruteforce.list`
     - [shuffledns](https://github.com/projectdiscovery/shuffledns) is based on massdns and has similar usage
     - Check all.txt from jhaddix
-  - Port scanning
-    - Do port scanning using masscan (just works with IPs, not domains) to detect open ports as it's really fast. Then, feed those ports into nmap to scan those open ports
-      - `masscan -p1-65535 -iL $ipfile --maxrate 1800 -oG output.txt`
-      - `dnmasscan` has a similar use but it accepts domain names as targets
-  - Service scanning
-    - Use `brutespray` to bruteforce credentials taking as an input the -oG output of masscan
-  - Github dorking: https://gist.github.com/jhaddix/77253cea49bf4bd4bfd5d384a37ce7a4
-  - Screenshot taking: aquatone, HTTPScreenshot, Eyewitness
-  - Subdomain takeover: if a subdomain is pointing to another service's tool, like heroku or a aws s3 bucket, and they don't exist anymore, it would be possible to register them for the users to think it's the actual site while it's not. https://github.com/edoverflow/can-i-take-over-xyz
+- Port scanning
+  - Do port scanning using masscan (just works with IPs, not domains) to detect open ports as it's really fast. Then, feed those ports into nmap to scan those open ports
+    - `masscan -p1-65535 -iL $ipfile --maxrate 1800 -oG output.txt`
+    - `dnmasscan` has a similar use but it accepts domain names as targets
+- Service scanning
+  - Use `brutespray` to bruteforce credentials taking as an input the -oG output of masscan
+- Github dorking: https://gist.github.com/jhaddix/77253cea49bf4bd4bfd5d384a37ce7a4
+- Screenshot taking: aquatone, HTTPScreenshot, Eyewitness
+- Subdomain takeover: if a subdomain is pointing to another service's tool, like heroku or a aws s3 bucket, and they don't exist anymore, it would be possible to register them for the users to think it's the actual site while it's not. https://github.com/edoverflow/can-i-take-over-xyz
+- Tools to help automation/Frameworks:
+  - [Codingo's Interlace](https://github.com/codingo/Interlace) Glue tools together. Help add threading to tools don't have the functionality.
+  - 
   
     
     
