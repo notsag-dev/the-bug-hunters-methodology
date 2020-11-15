@@ -26,7 +26,7 @@
     - Using Google:
       - First search for `site:twitch.tv`. Then `site:twitch.tv -www.twitch.tv`. Then `site:twitch.tv -www.twitch.tv -dev.twitch.tv`, iteratively adding the ones you've found
     - Using amass, subfinder, [github-subdomains](https://github.com/gwen001/github-subdomains), :
-      - `amass -d twitch.tv`
+      - `amass enum -d twitch.tv`
       - `subfinder -d twitch.tv -v`
       - [github-subdomains](https://github.com/gwen001/github-subdomains): `github-subdomains -d twitch.tv` (rate limited, 5 iterations with a sleep of 6 seconds, and then wait 10 seconds)
       - [shosubgo](https://github.com/incogbyte/shosubgo): `shosubgo`: `go run main.go -d twitch.tv -s`
