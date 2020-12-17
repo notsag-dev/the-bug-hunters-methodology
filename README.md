@@ -50,7 +50,30 @@
 - Subdomain takeover: if a subdomain is pointing to another service's tool, like heroku or a aws s3 bucket, and they don't exist anymore, it would be possible to register them for the users to think it's the actual site while it's not. https://github.com/edoverflow/can-i-take-over-xyz
 - Tools to help automation/Frameworks:
   - [Codingo's Interlace](https://github.com/codingo/Interlace) Glue tools together. Help add threading to tools don't have the functionality.
-  - 
-  
+
+## Questions
+What are their subdomains?
+What ports are open?
+Is this ip running a web server?
+Has this site changed?
+Is this a sensitive site?
+What urls are in their js?
+Which of these share analytics code?
+What domains do they own?
+Which certs are about to expire?
+What are all the links on this site?
+What are this customer's asns?
+What ips are in their asns?
+Which ips are running web servers?
+What stack is this site running?
+Which of these sites is running wordpress?
+Which of these sites is running drupal?
+Who works at this company?
+Do they have personal github accounts?
+Do those have sensitive content?
+Do those accounts have content related to work?
+Do they have any s3 buckets that are open?
+Are they serving databases?
+Are they open or bruteforceable?
     
     
