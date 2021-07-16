@@ -1,4 +1,5 @@
 # the-bug-hunters-methodology
+Transcription from jhaddix talk.
 
 ## Get seed/root domains
 - Check scope of the bug bounty program
